@@ -1,0 +1,9 @@
+C:\Users\Yedel\Documents\GitHub\Final\Negociocapa\bin\Debug\Negociocapa.dll
+C:\Users\Yedel\Documents\GitHub\Final\Negociocapa\bin\Debug\Negociocapa.pdb
+C:\Users\Yedel\Documents\GitHub\Final\Negociocapa\bin\Debug\EntidadCapa.dll
+C:\Users\Yedel\Documents\GitHub\Final\Negociocapa\bin\Debug\EntidadCapa.pdb
+C:\Users\Yedel\Documents\GitHub\Final\Negociocapa\obj\Debug\Negociocapa.csproj.AssemblyReference.cache
+C:\Users\Yedel\Documents\GitHub\Final\Negociocapa\obj\Debug\Negociocapa.csproj.CoreCompileInputs.cache
+C:\Users\Yedel\Documents\GitHub\Final\Negociocapa\obj\Debug\Negociocapa.csproj.CopyComplete
+C:\Users\Yedel\Documents\GitHub\Final\Negociocapa\obj\Debug\Negociocapa.dll
+C:\Users\Yedel\Documents\GitHub\Final\Negociocapa\obj\Debug\Negociocapa.pdb

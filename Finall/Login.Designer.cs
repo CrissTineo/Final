@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btnocultar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnmostrar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.user = new System.Windows.Forms.TextBox();
+            this.txtpas2 = new System.Windows.Forms.TextBox();
             this.btnlogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtpas2 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnocultar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnmostrar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnocultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnmostrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,7 +53,7 @@
             this.panel1.Controls.Add(this.btnocultar);
             this.panel1.Controls.Add(this.btnmostrar);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.user);
             this.panel1.Controls.Add(this.txtpas2);
             this.panel1.Controls.Add(this.btnlogin);
             this.panel1.Controls.Add(this.bunifuCustomLabel5);
@@ -63,6 +63,92 @@
             this.panel1.Size = new System.Drawing.Size(337, 574);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.Color.Silver;
+            this.checkBox1.Location = new System.Drawing.Point(48, 548);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(289, 23);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "Remember password and username.";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(118, 71);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(146, 49);
+            this.bunifuCustomLabel1.TabIndex = 0;
+            this.bunifuCustomLabel1.Text = "Sign in";
+            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
+            // 
+            // btnocultar
+            // 
+            this.btnocultar.BackColor = System.Drawing.Color.Transparent;
+            this.btnocultar.Image = ((System.Drawing.Image)(resources.GetObject("btnocultar.Image")));
+            this.btnocultar.ImageActive = null;
+            this.btnocultar.Location = new System.Drawing.Point(273, 400);
+            this.btnocultar.Name = "btnocultar";
+            this.btnocultar.Size = new System.Drawing.Size(47, 26);
+            this.btnocultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnocultar.TabIndex = 5;
+            this.btnocultar.TabStop = false;
+            this.btnocultar.Zoom = 10;
+            this.btnocultar.Click += new System.EventHandler(this.btnocultar_Click);
+            // 
+            // btnmostrar
+            // 
+            this.btnmostrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnmostrar.Image = ((System.Drawing.Image)(resources.GetObject("btnmostrar.Image")));
+            this.btnmostrar.ImageActive = null;
+            this.btnmostrar.Location = new System.Drawing.Point(273, 400);
+            this.btnmostrar.Name = "btnmostrar";
+            this.btnmostrar.Size = new System.Drawing.Size(47, 26);
+            this.btnmostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnmostrar.TabIndex = 6;
+            this.btnmostrar.TabStop = false;
+            this.btnmostrar.Zoom = 10;
+            this.btnmostrar.Click += new System.EventHandler(this.btnmostrar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(117, 151);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(134, 97);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // user
+            // 
+            this.user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.user.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.user.ForeColor = System.Drawing.Color.Silver;
+            this.user.Location = new System.Drawing.Point(57, 307);
+            this.user.Name = "user";
+            this.user.Size = new System.Drawing.Size(198, 27);
+            this.user.TabIndex = 2;
+            // 
+            // txtpas2
+            // 
+            this.txtpas2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.txtpas2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpas2.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.txtpas2.ForeColor = System.Drawing.Color.Silver;
+            this.txtpas2.Location = new System.Drawing.Point(57, 400);
+            this.txtpas2.Name = "txtpas2";
+            this.txtpas2.PasswordChar = '*';
+            this.txtpas2.Size = new System.Drawing.Size(198, 27);
+            this.txtpas2.TabIndex = 2;
             // 
             // btnlogin
             // 
@@ -112,92 +198,6 @@
             this.bunifuCustomLabel4.TabIndex = 0;
             this.bunifuCustomLabel4.Text = "Email";
             // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(118, 71);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(146, 49);
-            this.bunifuCustomLabel1.TabIndex = 0;
-            this.bunifuCustomLabel1.Text = "Sign in";
-            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
-            // 
-            // txtpas2
-            // 
-            this.txtpas2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.txtpas2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpas2.Font = new System.Drawing.Font("Century Gothic", 8F);
-            this.txtpas2.ForeColor = System.Drawing.Color.Silver;
-            this.txtpas2.Location = new System.Drawing.Point(57, 400);
-            this.txtpas2.Name = "txtpas2";
-            this.txtpas2.PasswordChar = '*';
-            this.txtpas2.Size = new System.Drawing.Size(198, 27);
-            this.txtpas2.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 8F);
-            this.textBox2.ForeColor = System.Drawing.Color.Silver;
-            this.textBox2.Location = new System.Drawing.Point(57, 307);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(198, 27);
-            this.textBox2.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(117, 151);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 97);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // btnocultar
-            // 
-            this.btnocultar.BackColor = System.Drawing.Color.Transparent;
-            this.btnocultar.Image = ((System.Drawing.Image)(resources.GetObject("btnocultar.Image")));
-            this.btnocultar.ImageActive = null;
-            this.btnocultar.Location = new System.Drawing.Point(273, 400);
-            this.btnocultar.Name = "btnocultar";
-            this.btnocultar.Size = new System.Drawing.Size(47, 26);
-            this.btnocultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnocultar.TabIndex = 5;
-            this.btnocultar.TabStop = false;
-            this.btnocultar.Zoom = 10;
-            this.btnocultar.Click += new System.EventHandler(this.btnocultar_Click);
-            // 
-            // btnmostrar
-            // 
-            this.btnmostrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnmostrar.Image = ((System.Drawing.Image)(resources.GetObject("btnmostrar.Image")));
-            this.btnmostrar.ImageActive = null;
-            this.btnmostrar.Location = new System.Drawing.Point(273, 400);
-            this.btnmostrar.Name = "btnmostrar";
-            this.btnmostrar.Size = new System.Drawing.Size(47, 26);
-            this.btnmostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnmostrar.TabIndex = 6;
-            this.btnmostrar.TabStop = false;
-            this.btnmostrar.Zoom = 10;
-            this.btnmostrar.Click += new System.EventHandler(this.btnmostrar_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.Silver;
-            this.checkBox1.Location = new System.Drawing.Point(14, 547);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(289, 23);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "Remember password and username.";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // Login
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
@@ -208,9 +208,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnocultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnmostrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -231,11 +231,11 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox txtpas2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuImageButton btnocultar;
         private Bunifu.Framework.UI.BunifuImageButton btnmostrar;
         private System.Windows.Forms.CheckBox checkBox1;
+        public System.Windows.Forms.TextBox user;
+        public System.Windows.Forms.TextBox txtpas2;
     }
 }

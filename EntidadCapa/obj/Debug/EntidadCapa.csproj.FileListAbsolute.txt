@@ -1,0 +1,6 @@
+C:\Users\Yedel\Documents\GitHub\Final\EntidadCapa\bin\Debug\EntidadCapa.dll
+C:\Users\Yedel\Documents\GitHub\Final\EntidadCapa\bin\Debug\EntidadCapa.pdb
+C:\Users\Yedel\Documents\GitHub\Final\EntidadCapa\obj\Debug\EntidadCapa.csproj.AssemblyReference.cache
+C:\Users\Yedel\Documents\GitHub\Final\EntidadCapa\obj\Debug\EntidadCapa.csproj.CoreCompileInputs.cache
+C:\Users\Yedel\Documents\GitHub\Final\EntidadCapa\obj\Debug\EntidadCapa.dll
+C:\Users\Yedel\Documents\GitHub\Final\EntidadCapa\obj\Debug\EntidadCapa.pdb

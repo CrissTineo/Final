@@ -51,7 +51,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -127,11 +130,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(568, 314);
+            this.label7.Location = new System.Drawing.Point(558, 302);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 21);
+            this.label7.Size = new System.Drawing.Size(117, 21);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Hour";
+            this.label7.Text = "Check in time";
             // 
             // label8
             // 
@@ -358,21 +361,50 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // dateTimePicker1
+            // maskedTextBox1
             // 
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.Transparent;
-            this.dateTimePicker1.Location = new System.Drawing.Point(649, 314);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(220, 26);
-            this.dateTimePicker1.TabIndex = 8;
+            this.maskedTextBox1.Location = new System.Drawing.Point(708, 300);
+            this.maskedTextBox1.Mask = "90:00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(73, 26);
+            this.maskedTextBox1.TabIndex = 8;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.Control;
+            this.label10.Location = new System.Drawing.Point(558, 329);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(130, 21);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Departure time";
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(708, 332);
+            this.maskedTextBox2.Mask = "90:00";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(73, 26);
+            this.maskedTextBox2.TabIndex = 8;
+            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1505, 676);
+            this.panel1.TabIndex = 9;
             // 
             // registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1686, 706);
-            this.Controls.Add(this.dateTimePicker1);
+            this.ClientSize = new System.Drawing.Size(1529, 706);
+            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.textBox5);
@@ -387,6 +419,7 @@
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label8);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
@@ -395,6 +428,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "registro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -430,6 +464,9 @@
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

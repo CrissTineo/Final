@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Negociocapa;
+using EntidadCapa;
+
 
 namespace Finall
 {
@@ -16,6 +20,8 @@ namespace Finall
         {
             InitializeComponent();
         }
+
+        SqlConnection conexion = new SqlConnection("server= localhost; database=~vsD3A6;integrated security= true");
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -51,10 +57,29 @@ namespace Finall
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            Dashboard ventana = new Dashboard();
-            ventana.Show();
+            clsLnUsuario_nuevo LN = new clsLnUsuario_nuevo();
+            clsBeUsuario_nuevo Be = new clsBeUsuario_nuevo();
+            Be.Correo = user.Text;
+            Be.Pass = txtpas2.Text;
+        
 
-            this. Hide();
+            if (LN.Obtenerusario(ref Be))
+            {
+                MessageBox.Show("Logueo Exitoso");
+                this.Hide();
+                Welcome puerta = new Welcome();
+                puerta.ShowDialog();
+                Dashboard ventana = new Dashboard();
+                ventana.Show();
+            }
+            
+
+
+
+            
+
+
+
         }
     }
 }
